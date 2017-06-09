@@ -146,11 +146,10 @@ search {
 
 /* Menu */
 #menu {
-    float: right;
-    width: 500px;
-    height: 90px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
+		display: block;
 }
 
 #menu ul {
@@ -159,15 +158,17 @@ search {
     padding-top: 20px;
     list-style: none;
     line-height: normal;
+		display: block;
+		width: 100%;
 }
 
 #menu li {
     float: left;
+		display: block;
 }
 
 #menu a {
-    display: block;
-    line-height: 100px;
+    display: inline-block;
     margin-right: 1px;
     padding: 20px 20px;
     text-decoration: none;
@@ -190,7 +191,7 @@ search {
 
 /* Page */
 #page {
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     padding-top: 30px;
 }
@@ -482,3 +483,15 @@ search {
 .list-style1 a {
     color: #7F7F7F;
 }
+
+@media all and (min-width: 460px){
+	#main{
+		display: inline;
+		margin: auto;
+	}
+
+@media all and (min-width: 600px){
+	nav li{
+		display: inline-block;
+		margin: auto;
+	}
