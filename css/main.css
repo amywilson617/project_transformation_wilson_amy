@@ -73,7 +73,6 @@ a {
 }
 
 #logo h1 {
-    line-height: 120px;
     letter-spacing: -2px;
     font-size: 3.8em;
 		padding-left: 10px;
@@ -100,13 +99,6 @@ a {
     background: none;
     text-decoration: none;
     color: #000000;
-}
-
-/* Splash */
-#splash {
-    width: 960px;
-    height: 300px;
-    margin: auto;
 }
 
 /* Search */
@@ -154,13 +146,13 @@ search {
 }
 
 #menu ul {
-    float: right;
-    margin: 0;
+    margin: auto;
     padding-top: 20px;
     list-style: none;
     line-height: normal;
 		display: block;
 		width: 100%;
+		text-align: center;
 }
 
 #menu li {
@@ -329,14 +321,14 @@ search {
 /* Footer */
 #footer {
     margin: 0 auto;
-    padding: 50px 0 15px 0;
+    padding: 10px 0 15px 0;
     font-family: 'Abel', sans-serif;
 		clear: both;
 }
 
 #footer p {
     margin: 0;
-    padding-top: 10px;
+    padding-top: 2px;
     letter-spacing: 1px;
     line-height: normal;
     font-size: 14px;
@@ -393,15 +385,6 @@ search {
 			width: 64%;
 	}
 }
-/*
-@media (min-width: 600px) {
-	#sidebar {
-			margin-left: 3%;
-			margin-right: 3%;
-			float: right;
-			clear: both;
-	}
-}*/
 
 @media (min-width: 600px) {
 	#section.page {
