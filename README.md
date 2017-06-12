@@ -1,1 +1,6 @@
+# Resources
 
+# Deductions
+
+# Comments
+```

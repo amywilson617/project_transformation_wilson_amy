@@ -1,9 +1,6 @@
 body {
-    margin: 0;
-    padding: 0;
-
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 1em;
     color: #5b5b5b;
     width: 100%;
 }
@@ -42,10 +39,10 @@ a {
     color: #5e5e5e;
 }
 
-
 #wrapper {
     background: #ffffff url(../img/img05.jpg) repeat;
-		width: 100%;
+    width: 100%;
+    display: inline-block;
 }
 
 .container {
@@ -66,21 +63,19 @@ a {
 /* Logo */
 #logo {
     float: left;
-    width: 300px;
-    margin: 0;
-    padding: 0;
     color: #ffffff;
+    padding: 4%;
 }
 
 #logo h1 {
     letter-spacing: -2px;
     font-size: 3.8em;
-		padding-left: 10px;
+    padding-left: 10px;
 }
 
 #logo h1 a {
     color: #1f1f1f;
-    text-shadow: 1px 1px rgba(0,0,0,.2);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 #logo p {
@@ -106,7 +101,7 @@ search {
     float: right;
     width: 280px;
     height: 60px;
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0 0 0;
 }
 
 #search form {
@@ -137,39 +132,38 @@ search {
     color: #000000;
 }
 
+/*
 /* Menu */
+
 #menu {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-		display: block;
+    width: 30%;
+    margin: 0px auto;
+    display: block;
 }
 
 #menu ul {
-    margin: auto;
-    padding-top: 20px;
+    margin: 0;
+    padding: 10px 0 10px 0;
     list-style: none;
     line-height: normal;
-		display: block;
-		width: 100%;
-		text-align: center;
 }
 
 #menu li {
-    float: left;
-		display: block;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    list-style: none;
+    line-height: normal;
 }
 
 #menu a {
-    display: inline-block;
     margin-right: 1px;
-    padding: 20px 20px;
+    padding: 0.8em, 1.2em;
     text-decoration: none;
     text-align: center;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, .2);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    font-size: 16px;
+    font-size: 1.3em;
     font-weight: 300;
     color: #1f1f1f;
     border: none;
@@ -180,6 +174,7 @@ search {
     background: url(../img/img01.jpg) repeat;
     text-decoration: none;
     color: #ffffff;
+    padding: 6%;
 }
 
 /* Page */
@@ -191,9 +186,9 @@ search {
 /* Content */
 #content {
     width: 94%;
-		margin: auto;
-		padding: 4%;
-		text-align: center;
+    margin: auto;
+    padding: 4%;
+    text-align: center;
 }
 
 .post {
@@ -233,7 +228,7 @@ search {
 .post .entry {
     padding-bottom: 10px;
     text-align: justify;
-		float: right;
+    float: right;
 }
 
 .links {
@@ -267,8 +262,8 @@ search {
 /* Sidebar */
 #sidebar {
     padding-top: 10px;
-		margin-left: 3%;
-		margin-right: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 #sidebar ul {
@@ -293,20 +288,20 @@ search {
 }
 
 #sidebar li li a {
-    padding: 0px 0px 0px 20px;
+    padding: 0 0 0 20px;
     background: url(../img/img04.jpg) no-repeat left 50%;
 }
 
 #sidebar h2 {
     height: 38px;
-    padding: 0px 0px 30px 0px;
-    letter-spacing: -.5px;
+    padding: 0 0 30px 0;
+    letter-spacing: -0.5px;
     font-size: 1.8em;
     color: #222222;
 }
 
 #sidebar p {
-    padding: 0px 30px 20px 30px;
+    padding: 0 30px 20px 30px;
     text-align: justify;
 }
 
@@ -319,12 +314,13 @@ search {
 }
 
 /* Footer */
+
 #footer {
     margin: 0 auto;
     padding: 10px 0 15px 0;
     font-family: 'Abel', sans-serif;
-		clear: both;
-		 background: #050505 url(../img/img01.jpg);
+    clear: both;
+    background: #050505 url(../img/img01.jpg);
 }
 
 #footer p {
@@ -336,7 +332,7 @@ search {
     text-transform: uppercase;
     text-align: center;
     color: #5e5e5e;
-		clear: both;
+    clear: both;
 }
 
 #footer a {
@@ -349,7 +345,8 @@ search {
     height: auto;
     background: url(../img/img03.png) no-repeat left bottom;
 }
-#banner img{
+
+#banner img {
     margin: auto;
     width: 100%;
     height: auto;
@@ -360,36 +357,44 @@ search {
 }
 
 .list-style1 a {
-    color: #7F7F7F;
+    color: #7f7f7f;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (min-width: 600px) {
+    nav li {
+        width: 60%;
+        display: inline-block;
+    }
+}
+
+@media all and (min-width: 850px) {
+    nav li {
+        width: calc(100%/3);
+    }
 }
 
 @media (min-width: 460px) {
-	#main{
-		width: 80%;
-		display: inline;
-		margin: auto;
-	}
+    #main {
+        width: 80%;
+        display: inline;
+        margin: auto;
+    }
 }
 
 @media (min-width: 600px) {
-	nav li{
-		display: inline-block;
-		margin: auto;
-	}
+    #content {
+        margin-left: 3%;
+        margin-right: 3%;
+        float: left;
+        width: 64%;
+    }
 }
 
 @media (min-width: 600px) {
-	#content {
-			margin-left: 3%;
-			margin-right: 3%;
-			float: left;
-			width: 64%;
-	}
-}
-
-@media (min-width: 600px) {
-	#section.page {
-		  width: 60%;
-			clear: none;
-	}
+    #section.page {
+        width: 60%;
+        clear: none;
+    }
 }
