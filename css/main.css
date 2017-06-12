@@ -3,6 +3,12 @@ body {
     font-size: 1em;
     color: #5b5b5b;
     width: 100%;
+
+}
+
+#header-wrapper {
+    max-width: 1200px;
+    margin: auto;
 }
 
 h1,
@@ -62,15 +68,14 @@ a {
 
 /* Logo */
 #logo {
-    float: left;
     color: #ffffff;
-    padding: 4%;
 }
 
 #logo h1 {
     letter-spacing: -2px;
     font-size: 3.8em;
     padding-left: 10px;
+    display: inline;;
 }
 
 #logo h1 a {
@@ -80,7 +85,7 @@ a {
 
 #logo p {
     letter-spacing: -1px;
-    font: normal 18px Georgia, "Times New Roman", Times, serif;
+    font: normal 1.2em Georgia, "Times New Roman", Times, serif;
     font-style: italic;
     color: #8e8e8e;
 }
@@ -96,68 +101,28 @@ a {
     color: #000000;
 }
 
-/* Search */
-search {
-    float: right;
-    width: 280px;
-    height: 60px;
-    padding: 20px 0 0 0;
-}
-
-#search form {
-    height: 41px;
-    margin: 0;
-    padding: 10px 0 0 20px;
-}
-
-#search fieldset {
-    border: none;
-}
-
-#search-text {
-    width: 170px;
-    padding: 6px 5px 2px 5px;
-    border: 1px solid #e7ebed;
-    background: #ffffff;
-    text-transform: lowercase;
-    font: normal 11px Arial, Helvetica, sans-serif;
-    color: #5d781d;
-}
-
-#search-submit {
-    width: 50px;
-    height: 22px;
-    border: none;
-    background: #b9b9b9;
-    color: #000000;
-}
-
-/*
 /* Menu */
-
 #menu {
-    width: 30%;
-    margin: 0px auto;
+    width: auto;
     display: block;
 }
 
 #menu ul {
-    margin: 0;
-    padding: 10px 0 10px 0;
+    margin: 1%;
+    padding: 1%;
     list-style: none;
     line-height: normal;
 }
 
 #menu li {
-    margin: 0;
-    padding: 10px 0 10px 0;
     list-style: none;
     line-height: normal;
+    margin-top: 2%;
+    padding-top: 3%;
+
 }
 
 #menu a {
-    margin-right: 1px;
-    padding: 0.8em, 1.2em;
     text-decoration: none;
     text-align: center;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
@@ -167,6 +132,11 @@ search {
     font-weight: 300;
     color: #1f1f1f;
     border: none;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: inline;
 }
 
 #menu a:hover,
@@ -174,7 +144,14 @@ search {
     background: url(../img/img01.jpg) repeat;
     text-decoration: none;
     color: #ffffff;
-    padding: 6%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 /* Page */
@@ -193,7 +170,7 @@ search {
 
 .post {
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 1%px;
     border-bottom: 1px solid #e7ebed;
 }
 
@@ -206,6 +183,8 @@ search {
     border: none;
     text-decoration: none;
     color: #222222;
+    float: left;
+    clear: both;
 }
 
 .post .meta {
@@ -219,6 +198,7 @@ search {
 
 .post .meta .date {
     float: left;
+    clear: both;
 }
 
 .post .meta .posted {
@@ -266,10 +246,6 @@ search {
     margin-right: 3%;
 }
 
-#sidebar ul {
-    list-style: none;
-}
-
 #sidebar li ul {
     padding-bottom: 30px;
 }
@@ -314,7 +290,6 @@ search {
 }
 
 /* Footer */
-
 #footer {
     margin: 0 auto;
     padding: 10px 0 15px 0;
@@ -363,15 +338,8 @@ search {
 /* MEDIA QUERIES */
 
 @media all and (min-width: 600px) {
-    nav li {
-        width: 60%;
-        display: inline-block;
-    }
-}
-
-@media all and (min-width: 850px) {
-    nav li {
-        width: calc(100%/3);
+    #menu li {
+        display: inline;
     }
 }
 
@@ -387,8 +355,16 @@ search {
     #content {
         margin-left: 3%;
         margin-right: 3%;
-        float: left;
+        float: right;
         width: 64%;
+    }
+}
+
+@media (min-width: 600px) {
+    #menu ul {
+        float: right;
+        width: 40%;
+        margin-bottom: 2%;
     }
 }
 
