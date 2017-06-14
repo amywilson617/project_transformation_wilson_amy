@@ -6,6 +6,15 @@ body {
 
 }
 
+.visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+		width: 1px;
+    margin: -1px;
+}
+
 #header-wrapper {
     max-width: 1200px;
     margin: auto;
@@ -14,7 +23,7 @@ body {
 h1,
 h2,
 h3 {
-    padding: 10;
+    padding: 10px;
     text-transform: uppercase;
     font-weight: normal;
     font-family: 'Oswald', sans-serif;
@@ -153,6 +162,10 @@ a {
 }
 
 /* Page */
+h6 {
+    display: none;
+}
+
 #page {
     margin: 0 auto;
     padding-top: 10px;
@@ -168,7 +181,7 @@ a {
 
 .post {
     overflow: hidden;
-    margin-bottom: 1%px;
+    margin-bottom: 1%;
     border-bottom: 1px solid #e7ebed;
 }
 
