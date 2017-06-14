@@ -105,13 +105,13 @@ a {
 #menu {
     width: auto;
     display: block;
+    text-align: center;
 }
 
 #menu ul {
-    margin: 1%;
     padding: 1%;
     list-style: none;
-    line-height: normal;
+    line-height: 4em;
 }
 
 #menu li {
@@ -134,8 +134,6 @@ a {
     border: none;
     margin-top: 4%;
     margin-bottom: 4%;
-    margin-left: 1%;
-    margin-right: 1%;
     display: inline;
 }
 
@@ -192,7 +190,7 @@ a {
     padding-top: 10px;
     text-align: left;
     font-family: 'Abel', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 300;
 }
 
@@ -219,7 +217,7 @@ a {
 .more {
     display: block;
     float: left;
-    width: 88px;
+    width: 20%;
     padding: 5px 5px;
     margin-right: 10px;
     background: #222222;
@@ -231,7 +229,7 @@ a {
 .comments {
     display: block;
     float: left;
-    width: 88px;
+    width: 20%;
     padding: 5px 5px;
     background: #222222;
     color: #ffffff;
@@ -303,7 +301,7 @@ a {
     padding-top: 2px;
     letter-spacing: 1px;
     line-height: normal;
-    font-size: 14px;
+    font-size: 1em;
     text-transform: uppercase;
     text-align: center;
     color: #5e5e5e;
@@ -363,8 +361,14 @@ a {
 @media (min-width: 600px) {
     #menu ul {
         float: right;
-        width: 40%;
+        width: 60%;
         margin-bottom: 2%;
+    }
+}
+
+@media (min-width: 600px) {
+    #menu a {
+        padding: 1%;
     }
 }
 
