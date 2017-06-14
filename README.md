@@ -3,9 +3,9 @@
 
 [Webhost](www.amywilson.net/responsivetransformation)
 
-[W3C's validator]
+[W3C's validator](https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.amywilson.net%2Fresponsivetransformation%2F)
 
-[HTML 5 Outliner]
+[HTML 5 Outliner](https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fwww.amywilson.net%2Fresponsivetransformation%2F)
 
 
 # Resources
